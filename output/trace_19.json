@@ -1,0 +1,52 @@
+[
+  {
+    "node": "supervisor",
+    "output": {
+      "status": "ok",
+      "needs_policy": true,
+      "needs_data": false,
+      "clarification_question": null
+    }
+  },
+  {
+    "node": "worker_1_policy",
+    "hits": [
+      {
+        "citation": "4. Chính sách giao hàng > 4.4. Giao hàng nhanh và giao ưu tiên",
+        "content": "## 4. Chính sách giao hàng\n### 4.4. Giao hàng nhanh và giao ưu tiên\nĐối với đơn đủ điều kiện giao nhanh hoặc giao ưu tiên:\n\n- khách cần đặt trong khung giờ hệ thống hỗ trợ\n- địa chỉ nhận phải nằm trong vùng phục vụ\n- sản phẩm không thuộc danh mục hạn chế vận chuyển\n\nCác đơn giao nhanh có thể bị chuyển sang giao tiêu chuẩn nếu:\n\n- shop bàn giao hàng chậm\n- sản phẩm vượt ngưỡng kích thước hoặc khối lượng cho phép\n- phát sinh rủi ro vận hành từ đơn vị vận chuyển",
+        "distance": 0.5952052474021912
+      },
+      {
+        "citation": "4. Chính sách giao hàng > 4.7. Giao hàng không thành công",
+        "content": "## 4. Chính sách giao hàng\n### 4.7. Giao hàng không thành công\nĐơn hàng có thể bị cập nhật `delivery_failed` khi:\n\n- người nhận không nghe máy sau nhiều lần liên hệ\n- địa chỉ giao không chính xác\n- người nhận hẹn lại nhiều lần vượt quá ngưỡng hỗ trợ\n- khách từ chối nhận hàng không có lý do phù hợp\n- khu vực giao hàng tạm thời bị hạn chế\n\nTrong trường hợp giao không thành công:\n\n- hệ thống có thể tự động lên lịch giao lại\n- hoặc chuyển hoàn về kho / shop\n- hoặc hủy đơn tùy trạng thái thanh toán và điều kiện vận hành",
+        "distance": 0.7393060922622681
+      },
+      {
+        "citation": "4. Chính sách giao hàng > 4.1. Phương thức giao hàng",
+        "content": "## 4. Chính sách giao hàng\n### 4.1. Phương thức giao hàng\nVinShop Demo hỗ trợ các hình thức giao hàng sau:\n\n- `standard`: giao hàng tiêu chuẩn toàn quốc\n- `fast`: giao nhanh nội thành hoặc liên tỉnh ngắn\n- `express`: giao ưu tiên cho sản phẩm đủ điều kiện\n- `scheduled`: giao theo khung giờ hẹn trước tại một số khu vực\n\nKhông phải mọi sản phẩm đều hỗ trợ tất cả phương thức giao hàng. Hệ thống sẽ chỉ hiển thị các phương thức phù hợp dựa trên:\n\n- địa chỉ nhận hàng\n- kích thước và khối lượng gói hàng\n- điều kiện đóng gói của nhà bán\n- đặc thù sản phẩm như dễ vỡ, hàng giá trị cao, hàng cồng kềnh hoặc hàng cần bảo quản đặc biệt",
+        "distance": 0.7649376392364502
+      },
+      {
+        "citation": "5. Chính sách đổi trả và hoàn tiền > 5.4. Bằng chứng cần cung cấp",
+        "content": "## 5. Chính sách đổi trả và hoàn tiền\n### 5.4. Bằng chứng cần cung cấp\nKhi gửi yêu cầu trả hàng / hoàn tiền, khách nên cung cấp đầy đủ:\n\n- ảnh chụp kiện hàng còn nguyên tem vận chuyển\n- video mở kiện nếu có\n- ảnh chụp sản phẩm lỗi hoặc hư hỏng\n- ảnh chụp tem serial, mã vạch hoặc phụ kiện đi kèm\n- mô tả ngắn gọn vấn đề gặp phải\n\nNếu bằng chứng chưa đủ rõ:\n\n- hệ thống có thể yêu cầu bổ sung\n- thời gian xử lý có thể bị kéo dài\n- yêu cầu có thể bị từ chối nếu không đủ căn cứ",
+        "distance": 0.7859477996826172
+      }
+    ],
+    "output": {
+      "status": "ok",
+      "summary": "Đơn hàng sử dụng phương thức giao nhanh có thể bị chuyển sang hình thức giao hàng tiêu chuẩn nếu gặp phải các trường hợp sau: shop bàn giao hàng cho đơn vị vận chuyển chậm, sản phẩm có kích thước hoặc khối lượng vượt quá ngưỡng cho phép, hoặc do phát sinh các rủi ro vận hành từ phía đơn vị vận chuyển.",
+      "facts": [
+        "Shop bàn giao hàng chậm.",
+        "Sản phẩm vượt ngưỡng kích thước hoặc khối lượng cho phép.",
+        "Phát sinh rủi ro vận hành từ đơn vị vận chuyển."
+      ],
+      "citations": [
+        "4. Chính sách giao hàng > 4.4. Giao hàng nhanh và giao ưu tiên"
+      ]
+    }
+  },
+  {
+    "node": "worker_3_response",
+    "output": "Answer: Đơn hàng của bạn sử dụng phương thức giao nhanh có thể bị chuyển sang hình thức giao hàng tiêu chuẩn trong các trường hợp sau:\n- Người bán (shop) bàn giao hàng cho đơn vị vận chuyển chậm hơn thời gian quy định.\n- Sản phẩm có kích thước hoặc khối lượng vượt quá ngưỡng cho phép của dịch vụ giao nhanh.\n- Phát sinh các rủi ro vận hành khách quan từ phía đơn vị vận chuyển.\n\nEvidence:\n- Policy: Chính sách giao hàng (mục 4.4. Giao hàng nhanh và giao ưu tiên) quy định các trường hợp chuyển đổi phương thức giao hàng do lỗi từ phía người bán, đặc thù sản phẩm hoặc rủi ro vận hành.\n- Order data: None"
+  }
+]

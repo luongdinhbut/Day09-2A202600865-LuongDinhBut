@@ -1,0 +1,41 @@
+[
+  {
+    "node": "supervisor",
+    "output": {
+      "status": "ok",
+      "needs_policy": false,
+      "needs_data": true,
+      "clarification_question": null
+    }
+  },
+  {
+    "node": "worker_2_data",
+    "tool_calls": [
+      {
+        "tool": "get_vouchers_by_customer_id",
+        "args": {
+          "customer_id": "C999"
+        },
+        "result": {
+          "status": "not_found",
+          "customer_id": "C999"
+        }
+      }
+    ],
+    "output": {
+      "status": "not_found",
+      "summary": "Không tìm thấy voucher nào cho khách hàng có mã C999.",
+      "facts": [
+        "Khách hàng C999 không sở hữu bất kỳ voucher nào trong hệ thống."
+      ],
+      "missing_fields": [],
+      "not_found_entities": [
+        "Vouchers for customer C999"
+      ]
+    }
+  },
+  {
+    "node": "worker_3_response",
+    "output": "Status: not_found\nMessage: Rất tiếc, chúng tôi không tìm thấy voucher nào được liên kết với mã khách hàng C999 trong hệ thống. Vui lòng kiểm tra lại mã khách hàng hoặc liên hệ với bộ phận hỗ trợ nếu bạn cần thêm sự trợ giúp."
+  }
+]

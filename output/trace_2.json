@@ -1,0 +1,53 @@
+[
+  {
+    "node": "supervisor",
+    "output": {
+      "status": "ok",
+      "needs_policy": true,
+      "needs_data": false,
+      "clarification_question": null
+    }
+  },
+  {
+    "node": "worker_1_policy",
+    "hits": [
+      {
+        "citation": "4. Chính sách giao hàng > 4.5. Tách đơn và giao nhiều kiện",
+        "content": "## 4. Chính sách giao hàng\n### 4.5. Tách đơn và giao nhiều kiện\nMột đơn hàng có thể được tách thành nhiều kiện trong các trường hợp:\n\n- đơn có sản phẩm từ nhiều nhà bán khác nhau\n- các mặt hàng nằm ở nhiều kho\n- một phần hàng sẵn kho, phần còn lại cần xử lý riêng\n\nKhi đó:\n\n- mỗi kiện có thể có mã vận đơn riêng\n- thời gian giao của từng kiện có thể khác nhau\n- việc hoàn trả cũng có thể phát sinh theo từng kiện hoặc từng sản phẩm",
+        "distance": 0.44776076078414917
+      },
+      {
+        "citation": "4. Chính sách giao hàng > 4.6. Kiểm hàng khi nhận",
+        "content": "## 4. Chính sách giao hàng\n### 4.6. Kiểm hàng khi nhận\nKhách hàng được khuyến nghị:\n\n- kiểm tra tình trạng thùng hàng khi nhận\n- quay video mở kiện đối với sản phẩm giá trị cao\n- báo ngay trên ứng dụng nếu phát hiện vỡ, móp, thiếu phụ kiện hoặc sai sản phẩm\n\nTrong phạm vi nghiệp vụ mô phỏng cho lab:\n\n- khách được phép kiểm tra ngoại quan gói hàng trước khi xác nhận nhận\n- việc dùng thử sâu, lắp đặt, kích hoạt hoặc sử dụng lâu dài không thuộc phạm vi \"kiểm hàng tại chỗ\"",
+        "distance": 0.4691671133041382
+      },
+      {
+        "citation": "7. Hỗ trợ khách hàng và khiếu nại > 7.2. Thông tin cần cung cấp khi yêu cầu hỗ trợ",
+        "content": "## 7. Hỗ trợ khách hàng và khiếu nại\n### 7.2. Thông tin cần cung cấp khi yêu cầu hỗ trợ\nĐể hệ thống hoặc agent trả lời chính xác hơn, khách nên cung cấp:\n\n- mã đơn hàng\n- mã khách hàng hoặc số điện thoại đã đăng ký\n- sản phẩm cần hỗ trợ\n- nội dung vấn đề\n- ảnh hoặc video nếu có",
+        "distance": 0.5796521902084351
+      },
+      {
+        "citation": "5. Chính sách đổi trả và hoàn tiền > 5.4. Bằng chứng cần cung cấp",
+        "content": "## 5. Chính sách đổi trả và hoàn tiền\n### 5.4. Bằng chứng cần cung cấp\nKhi gửi yêu cầu trả hàng / hoàn tiền, khách nên cung cấp đầy đủ:\n\n- ảnh chụp kiện hàng còn nguyên tem vận chuyển\n- video mở kiện nếu có\n- ảnh chụp sản phẩm lỗi hoặc hư hỏng\n- ảnh chụp tem serial, mã vạch hoặc phụ kiện đi kèm\n- mô tả ngắn gọn vấn đề gặp phải\n\nNếu bằng chứng chưa đủ rõ:\n\n- hệ thống có thể yêu cầu bổ sung\n- thời gian xử lý có thể bị kéo dài\n- yêu cầu có thể bị từ chối nếu không đủ căn cứ",
+        "distance": 0.5817946195602417
+      }
+    ],
+    "output": {
+      "status": "ok",
+      "summary": "Theo chính sách của cửa hàng, khách hàng được khuyến nghị kiểm tra tình trạng thùng hàng khi nhận. Cụ thể, khách hàng được phép kiểm tra ngoại quan gói hàng trước khi xác nhận nhận hàng. Đối với các sản phẩm có giá trị cao, khách hàng nên quay video quá trình mở kiện. Nếu phát hiện tình trạng vỡ, móp, thiếu phụ kiện hoặc sai sản phẩm, khách hàng cần báo ngay trên ứng dụng. Lưu ý rằng việc dùng thử sâu, lắp đặt, kích hoạt hoặc sử dụng lâu dài không nằm trong phạm vi \"kiểm hàng tại chỗ\".",
+      "facts": [
+        "Khách hàng được phép kiểm tra ngoại quan gói hàng trước khi xác nhận nhận hàng.",
+        "Khuyến nghị quay video mở kiện đối với sản phẩm giá trị cao.",
+        "Cần báo ngay trên ứng dụng nếu phát hiện vỡ, móp, thiếu phụ kiện hoặc sai sản phẩm.",
+        "Việc dùng thử, lắp đặt hoặc kích hoạt sản phẩm không thuộc phạm vi kiểm hàng tại chỗ."
+      ],
+      "citations": [
+        "4. Chính sách giao hàng > 4.6. Kiểm hàng khi nhận"
+      ]
+    }
+  },
+  {
+    "node": "worker_3_response",
+    "output": "Answer: Chào bạn, theo chính sách của cửa hàng, bạn hoàn toàn được phép kiểm tra ngoại quan gói hàng trước khi xác nhận nhận hàng để đảm bảo kiện hàng còn nguyên vẹn.\n\nĐể đảm bảo quyền lợi tốt nhất, bạn lưu ý một số điểm sau:\n- Đối với các sản phẩm có giá trị cao, chúng tôi khuyến nghị bạn nên quay video quá trình mở kiện hàng.\n- Nếu phát hiện tình trạng vỡ, móp, thiếu phụ kiện hoặc sai sản phẩm, bạn vui lòng báo ngay cho chúng tôi thông qua ứng dụng để được hỗ trợ kịp thời.\n- Lưu ý rằng việc kiểm hàng tại chỗ chỉ áp dụng cho kiểm tra ngoại quan; các hoạt động như dùng thử, lắp đặt, kích hoạt hoặc sử dụng sản phẩm không nằm trong phạm vi này.\n\nEvidence:\n- Policy: Theo mục 4.6 của Chính sách giao hàng, khách hàng được kiểm tra ngoại quan gói hàng khi nhận. Khuyến nghị quay video mở kiện với hàng giá trị cao và báo ngay qua ứng dụng nếu có sai sót. Việc dùng thử, lắp đặt không được tính là kiểm hàng tại chỗ.\n- Order data: None"
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "node": "supervisor",
+    "output": {
+      "status": "clarification_needed",
+      "needs_policy": true,
+      "needs_data": true,
+      "clarification_question": "Để kiểm tra chính sách hoàn trả cho đơn hàng cụ thể của bạn, vui lòng cung cấp mã đơn hàng (order_id) của bạn."
+    }
+  },
+  {
+    "node": "worker_3_response",
+    "output": "Status: clarification_needed\nQuestion: Để kiểm tra chính sách hoàn trả cho đơn hàng cụ thể của bạn, vui lòng cung cấp mã đơn hàng (order_id) của bạn."
+  }
+]

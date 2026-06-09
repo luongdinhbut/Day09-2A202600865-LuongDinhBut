@@ -1,0 +1,57 @@
+[
+  {
+    "node": "supervisor",
+    "output": {
+      "status": "ok",
+      "needs_policy": true,
+      "needs_data": false,
+      "clarification_question": null
+    }
+  },
+  {
+    "node": "worker_1_policy",
+    "hits": [
+      {
+        "citation": "5. Chính sách đổi trả và hoàn tiền > 5.10. Quan hệ giữa trạng thái đơn hàng và quyền trả hàng",
+        "content": "## 5. Chính sách đổi trả và hoàn tiền\n### 5.10. Quan hệ giữa trạng thái đơn hàng và quyền trả hàng\nTrong dữ liệu lab, sinh viên nên hiểu rõ:\n\n- đơn chưa giao thành công thường **chưa thể** bắt đầu quy trình trả hàng thông thường\n- đơn đang `in_transit` có thể được hỗ trợ hủy hoặc từ chối nhận trong một số trường hợp, nhưng không xem là \"đã trả hàng\"\n- đơn `delivered` mới là trạng thái thường dùng để tính cửa sổ đổi trả\n- đơn `completed` vẫn có thể còn trong hạn trả hàng nếu chưa vượt `eligible_for_return_until`\n\nĐiều này rất quan trọng cho các câu hỏi như:\n\n- \"Đơn hàng 1971 có được hoàn trả không?\"",
+        "distance": 0.5043368339538574
+      },
+      {
+        "citation": "4. Chính sách giao hàng > 4.6. Kiểm hàng khi nhận",
+        "content": "## 4. Chính sách giao hàng\n### 4.6. Kiểm hàng khi nhận\nKhách hàng được khuyến nghị:\n\n- kiểm tra tình trạng thùng hàng khi nhận\n- quay video mở kiện đối với sản phẩm giá trị cao\n- báo ngay trên ứng dụng nếu phát hiện vỡ, móp, thiếu phụ kiện hoặc sai sản phẩm\n\nTrong phạm vi nghiệp vụ mô phỏng cho lab:\n\n- khách được phép kiểm tra ngoại quan gói hàng trước khi xác nhận nhận\n- việc dùng thử sâu, lắp đặt, kích hoạt hoặc sử dụng lâu dài không thuộc phạm vi \"kiểm hàng tại chỗ\"",
+        "distance": 0.5245804190635681
+      },
+      {
+        "citation": "5. Chính sách đổi trả và hoàn tiền > 5.3. Các trường hợp không hỗ trợ trả hàng",
+        "content": "## 5. Chính sách đổi trả và hoàn tiền\n### 5.3. Các trường hợp không hỗ trợ trả hàng\nĐể phù hợp với một hệ thống thương mại điện tử thực tế, các trường hợp sau thường bị giới hạn hoặc không hỗ trợ trả hàng:\n\n- sản phẩm tiêu dùng đã mở niêm phong và không còn khả năng bán lại\n- thực phẩm tươi sống hoặc hàng đông lạnh sau khi đã giao thành công\n- đồ lót, sản phẩm chăm sóc cá nhân, mỹ phẩm đã qua sử dụng\n- phần mềm, thẻ quà tặng điện tử, mã nạp điện tử\n- hàng đặt riêng, cá nhân hóa theo yêu cầu\n- sản phẩm bị hư hỏng do khách sử dụng sai hướng dẫn\n- khách gửi lại sai hàng, thiếu phụ kiện hoặc không đúng serial\n\nCác trường hợp trên vẫn có thể được hỗ trợ hoàn tiền một phần hoặc xử lý ngoại lệ nếu có quyết định từ bộ phận chăm sóc khách hàng.",
+        "distance": 0.5457131862640381
+      },
+      {
+        "citation": "4. Chính sách giao hàng > 4.5. Tách đơn và giao nhiều kiện",
+        "content": "## 4. Chính sách giao hàng\n### 4.5. Tách đơn và giao nhiều kiện\nMột đơn hàng có thể được tách thành nhiều kiện trong các trường hợp:\n\n- đơn có sản phẩm từ nhiều nhà bán khác nhau\n- các mặt hàng nằm ở nhiều kho\n- một phần hàng sẵn kho, phần còn lại cần xử lý riêng\n\nKhi đó:\n\n- mỗi kiện có thể có mã vận đơn riêng\n- thời gian giao của từng kiện có thể khác nhau\n- việc hoàn trả cũng có thể phát sinh theo từng kiện hoặc từng sản phẩm",
+        "distance": 0.5575404167175293
+      }
+    ],
+    "output": {
+      "status": "ok",
+      "summary": "Theo chính sách của cửa hàng, các trường hợp sau đây thường bị giới hạn hoặc không được hỗ trợ trả hàng để đảm bảo tính thực tế trong thương mại điện tử:",
+      "facts": [
+        "Sản phẩm tiêu dùng đã mở niêm phong và không còn khả năng bán lại.",
+        "Thực phẩm tươi sống hoặc hàng đông lạnh sau khi đã giao thành công.",
+        "Đồ lót, sản phẩm chăm sóc cá nhân, mỹ phẩm đã qua sử dụng.",
+        "Phần mềm, thẻ quà tặng điện tử, mã nạp điện tử.",
+        "Hàng đặt riêng hoặc cá nhân hóa theo yêu cầu.",
+        "Sản phẩm bị hư hỏng do khách hàng sử dụng sai hướng dẫn.",
+        "Khách hàng gửi lại sai hàng, thiếu phụ kiện hoặc không đúng số serial.",
+        "Các trường hợp trên có thể được xem xét hoàn tiền một phần hoặc xử lý ngoại lệ nếu có quyết định từ bộ phận chăm sóc khách hàng."
+      ],
+      "citations": [
+        "5. Chính sách đổi trả và hoàn tiền > 5.3. Các trường hợp không hỗ trợ trả hàng"
+      ]
+    }
+  },
+  {
+    "node": "worker_3_response",
+    "output": "Answer: Chào bạn, để đảm bảo quyền lợi và tính thực tế trong giao dịch, cửa hàng thường không hỗ trợ trả hàng đối với các trường hợp sau:\n\n- Sản phẩm tiêu dùng đã mở niêm phong và không còn khả năng bán lại.\n- Thực phẩm tươi sống hoặc hàng đông lạnh sau khi đã giao thành công.\n- Đồ lót, sản phẩm chăm sóc cá nhân, mỹ phẩm đã qua sử dụng.\n- Phần mềm, thẻ quà tặng điện tử, mã nạp điện tử.\n- Hàng đặt riêng hoặc cá nhân hóa theo yêu cầu của khách hàng.\n- Sản phẩm bị hư hỏng do khách hàng sử dụng sai hướng dẫn.\n- Khách hàng gửi lại sai hàng, thiếu phụ kiện hoặc không đúng số serial.\n\nLưu ý rằng trong một số trường hợp đặc biệt, bộ phận chăm sóc khách hàng có thể xem xét hoàn tiền một phần hoặc xử lý ngoại lệ. Nếu bạn gặp vấn đề với đơn hàng, hãy liên hệ với chúng tôi để được hỗ trợ kiểm tra cụ thể nhé!\n\nEvidence:\n- Policy: Chính sách đổi trả và hoàn tiền (Mục 5.3)\n- Order data: None"
+  }
+]

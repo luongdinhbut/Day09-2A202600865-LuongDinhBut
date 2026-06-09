@@ -1,0 +1,156 @@
+[
+  {
+    "question": "Chính sách hoàn trả hàng ra sao?",
+    "expected": {},
+    "actual_status": "ok",
+    "final_answer": "Answer: Chào bạn, về chính sách hoàn trả hàng và hoàn tiền, chúng tôi xin thông tin đến bạn như sau:\n\nBạn có thể yêu cầu trả hàng hoặc hoàn tiền trong các trường hợp đơn hàng gặp sự cố như: giao sai sản phẩm, thiếu hàng, hàng bị lỗi/vỡ/hư hỏng, hàng không đúng mô tả, nghi ngờ hàng giả hoặc khi bạn đổi ý trong phạm vi cho phép. Việc hoàn trả có thể được thực hiện cho từng kiện hàng hoặc từng sản phẩm riêng lẻ tùy vào đơn hàng của bạn.\n\nSau khi yêu cầu được chấp thuận, tiền sẽ được hoàn về ví nội bộ, tài khoản ngân hàng, thẻ thanh toán hoặc phương thức thanh toán gốc (nếu được hỗ trợ). Thời gian bạn nhận được tiền thực tế sẽ phụ thuộc vào quy trình của ngân hàng, cổng thanh toán và quy trình xác minh từ bộ phận vận hành của chúng tôi.\n\nEvidence:\n- Policy: Chính sách dựa trên các quy định về yêu cầu trả hàng/hoàn tiền, chính sách giao hàng và quy trình hoàn tiền (Mục 3.3, 4.5, 5.9).\n- Order data: None",
+    "trace_file": "output\\trace_0.json"
+  },
+  {
+    "question": "Giao hàng tiêu chuẩn thường mất bao lâu?",
+    "expected": {},
+    "actual_status": "ok",
+    "final_answer": "Status: not_found\nMessage: Rất tiếc, hiện tại chúng tôi chưa có thông tin cụ thể về thời gian giao hàng dự kiến cho phương thức giao hàng tiêu chuẩn (standard) của VinShop Demo. Bạn có thể liên hệ với bộ phận chăm sóc khách hàng để được hỗ trợ chi tiết hơn về đơn hàng của mình nhé.",
+    "trace_file": "output\\trace_1.json"
+  },
+  {
+    "question": "Khách có được kiểm hàng khi nhận không?",
+    "expected": {},
+    "actual_status": "ok",
+    "final_answer": "Answer: Chào bạn, theo chính sách của cửa hàng, bạn hoàn toàn được phép kiểm tra ngoại quan gói hàng trước khi xác nhận nhận hàng để đảm bảo kiện hàng còn nguyên vẹn.\n\nĐể đảm bảo quyền lợi tốt nhất, bạn lưu ý một số điểm sau:\n- Đối với các sản phẩm có giá trị cao, chúng tôi khuyến nghị bạn nên quay video quá trình mở kiện hàng.\n- Nếu phát hiện tình trạng vỡ, móp, thiếu phụ kiện hoặc sai sản phẩm, bạn vui lòng báo ngay cho chúng tôi thông qua ứng dụng để được hỗ trợ kịp thời.\n- Lưu ý rằng việc kiểm hàng tại chỗ chỉ áp dụng cho kiểm tra ngoại quan; các hoạt động như dùng thử, lắp đặt, kích hoạt hoặc sử dụng sản phẩm không nằm trong phạm vi này.\n\nEvidence:\n- Policy: Theo mục 4.6 của Chính sách giao hàng, khách hàng được kiểm tra ngoại quan gói hàng khi nhận. Khuyến nghị quay video mở kiện với hàng giá trị cao và báo ngay qua ứng dụng nếu có sai sót. Việc dùng thử, lắp đặt không được tính là kiểm hàng tại chỗ.\n- Order data: None",
+    "trace_file": "output\\trace_2.json"
+  },
+  {
+    "question": "Voucher có được hoàn lại khi hủy đơn không?",
+    "expected": {},
+    "actual_status": "ok",
+    "final_answer": "Answer: Chào bạn, về thắc mắc hoàn lại voucher khi hủy đơn, chính sách của chúng tôi quy định như sau:\n\nVoucher của bạn sẽ được hoàn lại nếu đáp ứng đầy đủ các điều kiện: voucher vẫn còn hiệu lực, chưa vượt quá giới hạn sử dụng, toàn bộ đơn hàng (hoặc toàn bộ phần sử dụng chung voucher) đã bị hủy và voucher không thuộc nhóm chiến dịch bị loại trừ.\n\nTuy nhiên, voucher thường sẽ **không được hoàn lại** trong các trường hợp sau:\n- Voucher số lượng giới hạn đã hết lượt sử dụng.\n- Voucher từ các chương trình livestream, video, flash campaign đã hết hiệu lực hoặc hết lượt sử dụng.\n- Các loại voucher sự kiện đặc biệt có quy định riêng về việc không hoàn.\n\nHy vọng thông tin này giúp ích cho bạn!\n\nEvidence:\n- Policy: Chính sách voucher và khuyến mãi (mục 6.5): Voucher được hoàn nếu còn hiệu lực và hủy toàn bộ đơn hàng; không hoàn nếu voucher thuộc nhóm đặc biệt (livestream, flash campaign) hoặc đã hết lượt/hết hạn.\n- Order data: None",
+    "trace_file": "output\\trace_3.json"
+  },
+  {
+    "question": "Các trường hợp nào thường không hỗ trợ trả hàng?",
+    "expected": {},
+    "actual_status": "ok",
+    "final_answer": "Answer: Chào bạn, để đảm bảo quyền lợi và tính thực tế trong giao dịch, cửa hàng thường không hỗ trợ trả hàng đối với các trường hợp sau:\n\n- Sản phẩm tiêu dùng đã mở niêm phong và không còn khả năng bán lại.\n- Thực phẩm tươi sống hoặc hàng đông lạnh sau khi đã giao thành công.\n- Đồ lót, sản phẩm chăm sóc cá nhân, mỹ phẩm đã qua sử dụng.\n- Phần mềm, thẻ quà tặng điện tử, mã nạp điện tử.\n- Hàng đặt riêng hoặc cá nhân hóa theo yêu cầu của khách hàng.\n- Sản phẩm bị hư hỏng do khách hàng sử dụng sai hướng dẫn.\n- Khách hàng gửi lại sai hàng, thiếu phụ kiện hoặc không đúng số serial.\n\nLưu ý rằng trong một số trường hợp đặc biệt, bộ phận chăm sóc khách hàng có thể xem xét hoàn tiền một phần hoặc xử lý ngoại lệ. Nếu bạn gặp vấn đề với đơn hàng, hãy liên hệ với chúng tôi để được hỗ trợ kiểm tra cụ thể nhé!\n\nEvidence:\n- Policy: Chính sách đổi trả và hoàn tiền (Mục 5.3)\n- Order data: None",
+    "trace_file": "output\\trace_4.json"
+  },
+  {
+    "question": "Đơn hàng 1971 bao giờ được giao?",
+    "expected": {},
+    "actual_status": "ok",
+    "final_answer": "Answer: Chào bạn, đơn hàng 1971 của bạn hiện đang trong quá trình vận chuyển bởi đơn vị SPX Express. Dự kiến đơn hàng sẽ được giao đến địa chỉ tại Bình Thạnh, Hồ Chí Minh vào ngày 09/06/2026. Bạn vui lòng để ý điện thoại để nhận hàng nhé!\n\nEvidence:\n- Policy: None\n- Order data: Đơn hàng 1971 đang vận chuyển, dự kiến giao ngày 09/06/2026 bởi SPX Express.",
+    "trace_file": "output\\trace_5.json"
+  },
+  {
+    "question": "Cho tôi xem danh sách đơn hàng của khách hàng C001",
+    "expected": {},
+    "actual_status": "ok",
+    "final_answer": "Answer: Chào bạn, dưới đây là danh sách các đơn hàng của khách hàng Nguyễn Thu Anh (mã khách hàng C001) trong hệ thống:\n\n- Đơn hàng 1901: Đã hoàn tất.\n- Đơn hàng 1971: Đang vận chuyển, dự kiến giao ngày 09/06/2026.\n- Đơn hàng 2160: Đang vận chuyển.\n- Đơn hàng 2259: Đã hoàn tất.\n\nHy vọng thông tin này hữu ích với bạn!\n\nEvidence:\n- Policy: None\n- Order data: Khách hàng C001 có 4 đơn hàng (1901, 1971, 2160, 2259) với các trạng thái hoàn tất hoặc đang vận chuyển.",
+    "trace_file": "output\\trace_6.json"
+  },
+  {
+    "question": "Voucher của khách hàng C001 còn những mã nào dùng được?",
+    "expected": {},
+    "actual_status": "ok",
+    "final_answer": "Answer: Chào bạn, hiện tại khách hàng C001 đang có 01 voucher hợp lệ có thể sử dụng là:\n- Mã voucher: C001-BDAY-0626 (Voucher sinh nhật)\n- Giá trị giảm: 50.000 VNĐ\n- Điều kiện áp dụng: Đơn hàng có giá trị tối thiểu từ 399.000 VNĐ\n- Hạn sử dụng: Đến hết ngày 30/06/2026.\n\nHy vọng thông tin này giúp ích cho bạn!\n\nEvidence:\n- Policy: None\n- Order data: Khách hàng C001 sở hữu mã voucher C001-BDAY-0626, giảm 50.000 VNĐ cho đơn từ 399.000 VNĐ, hạn dùng đến 30/06/2026.",
+    "trace_file": "output\\trace_7.json"
+  },
+  {
+    "question": "Khách hàng C001 thuộc hạng gì và còn quota voucher bao nhiêu?",
+    "expected": {},
+    "actual_status": "ok",
+    "final_answer": "Answer: Chào bạn, khách hàng Nguyễn Thu Anh (mã C001) hiện đang là thành viên hạng Gold. Trong tháng này, khách hàng còn lại 6 lượt sử dụng voucher trong hạn mức (quota) hàng tháng.\n\nEvidence:\n- Policy: None\n- Order data: Khách hàng Nguyễn Thu Anh (C001) thuộc hạng Gold, đã sử dụng 4/10 voucher trong tháng, hiện còn lại 6 voucher.",
+    "trace_file": "output\\trace_8.json"
+  },
+  {
+    "question": "Đơn hàng 2058 đang ở trạng thái nào?",
+    "expected": {},
+    "actual_status": "ok",
+    "final_answer": "Answer: Đơn hàng 2058 của bạn đã được giao thành công vào lúc 17:10 ngày 01/06/2026. Đơn hàng bao gồm 2 sản phẩm là Tai nghe Bluetooth AirBeat S5 và Sạc nhanh 65W NovaCharge với tổng giá trị thanh toán là 1.347.000 VNĐ. Hiện tại, đơn hàng vẫn còn trong thời hạn hỗ trợ trả hàng đến hết ngày 16/06/2026.\n\nEvidence:\n- Policy: None\n- Order data: Đơn hàng 2058 đã giao thành công vào 17:10 ngày 01/06/2026; bao gồm 2 sản phẩm; tổng giá trị 1.347.000 VNĐ; thời hạn trả hàng đến 16/06/2026.",
+    "trace_file": "output\\trace_9.json"
+  },
+  {
+    "question": "Đơn hàng 1971 có được hoàn trả không?",
+    "expected": {},
+    "actual_status": "ok",
+    "final_answer": "Answer: Chào bạn, rất tiếc là đơn hàng 1971 của bạn hiện chưa thể thực hiện hoàn trả ngay lúc này. Theo thông tin hệ thống, đơn hàng của bạn (Giày sneaker StreetGo) đang trong quá trình vận chuyển (trạng thái 'in_transit') và dự kiến sẽ được giao đến bạn vào ngày 09/06/2026.\n\nTheo chính sách của chúng tôi, chỉ những đơn hàng đã giao thành công mới đủ điều kiện để bắt đầu quy trình trả hàng. Tuy nhiên, vì đơn hàng vẫn đang trên đường vận chuyển, bạn có thể liên hệ với bộ phận hỗ trợ để yêu cầu hủy đơn hoặc từ chối nhận hàng khi đơn vị vận chuyển liên hệ. Sau khi đơn hàng được giao thành công, nếu bạn vẫn muốn trả hàng, bạn có thể kiểm tra lại thời hạn đổi trả trong mục quản lý đơn hàng của mình.\n\nEvidence:\n- Policy: Theo mục 5.10 của Chính sách đổi trả và hoàn tiền, đơn hàng đang trong quá trình vận chuyển (in_transit) chưa thể thực hiện quy trình trả hàng mà chỉ có thể hỗ trợ hủy hoặc từ chối nhận.\n- Order data: Đơn hàng 1971 hiện có trạng thái 'in_transit', dự kiến giao ngày 2026-06-09, nên hệ thống chưa cho phép thực hiện hoàn trả (can_return_now: false).",
+    "trace_file": "output\\trace_10.json"
+  },
+  {
+    "question": "Đơn hàng 2058 còn trong thời gian trả hàng không?",
+    "expected": {},
+    "actual_status": "ok",
+    "final_answer": "Status: not_found\nMessage: Rất tiếc, hiện tại hệ thống không có thông tin chi tiết về chính sách đổi trả cụ thể để xác nhận các điều kiện áp dụng. Tuy nhiên, dựa trên dữ liệu đơn hàng, đơn hàng 2058 của bạn đã được giao thành công vào ngày 01/06/2026 và vẫn còn trong thời hạn hỗ trợ trả hàng đến hết ngày 16/06/2026. Bạn vui lòng liên hệ bộ phận chăm sóc khách hàng để được hướng dẫn chi tiết về quy trình đổi trả nhé.",
+    "trace_file": "output\\trace_11.json"
+  },
+  {
+    "question": "Đơn hàng 2058 nếu khách đổi ý thì có thể trả trong bao lâu?",
+    "expected": {},
+    "actual_status": "ok",
+    "final_answer": "Answer: Chào bạn, đối với đơn hàng 2058 của bạn, bạn hoàn toàn có thể thực hiện trả hàng nếu đổi ý. Theo thông tin hệ thống, đơn hàng của bạn được áp dụng thời hạn trả hàng trong vòng 15 ngày kể từ ngày nhận hàng thành công. Cụ thể, bạn có thể gửi yêu cầu trả hàng cho các sản phẩm trong đơn hàng (Tai nghe Bluetooth AirBeat S5 và Sạc nhanh 65W NovaCharge) đến hết ngày 16/06/2026.\n\nEvidence:\n- Policy: Chính sách đổi trả quy định thời hạn trả hàng từ 24 giờ đến 15 ngày tùy loại sản phẩm, tính từ khi đơn hàng giao thành công.\n- Order data: Đơn hàng 2058 đã giao thành công ngày 01/06/2026 và thời hạn trả hàng cuối cùng là ngày 16/06/2026.",
+    "trace_file": "output\\trace_12.json"
+  },
+  {
+    "question": "Đơn hàng 1971 đang giao thì nên trả hàng hay từ chối nhận?",
+    "expected": {},
+    "actual_status": "ok",
+    "final_answer": "Answer: Đối với đơn hàng 1971 (Giày sneaker StreetGo) đang trong quá trình vận chuyển, bạn có hai phương án xử lý như sau:\n\n1. **Từ chối nhận hàng:** Vì đơn hàng đang ở trạng thái \"Đang vận chuyển\" (dự kiến giao ngày 09/06/2026), bạn có thể từ chối nhận hàng khi shipper liên hệ. Lưu ý rằng theo quy định, việc từ chối nhận hàng không được tính là quy trình \"trả hàng\" chính thức trên hệ thống.\n2. **Nhận hàng và trả hàng sau:** Do sản phẩm này hỗ trợ chính sách trả hàng trong vòng 15 ngày kể từ khi nhận, bạn có thể nhận hàng trước, sau đó thực hiện quy trình trả hàng theo quy định nếu vẫn có nhu cầu.\n\nVì đơn hàng đã được thanh toán qua ví điện tử, sau khi bạn từ chối nhận hoặc hoàn tất thủ tục trả hàng, hệ thống sẽ tiến hành các bước xử lý hoàn tiền cho bạn.\n\nEvidence:\n- Policy: Theo chính sách 5.10, đơn hàng đang vận chuyển (in_transit) chưa thể thực hiện quy trình trả hàng thông thường. Bạn có thể chọn hủy đơn hoặc từ chối nhận hàng, nhưng việc từ chối nhận không được ghi nhận là \"đã trả hàng\".\n- Order data: Đơn hàng 1971 đang vận chuyển, dự kiến giao ngày 09/06/2026, đã thanh toán qua ví điện tử và có hỗ trợ trả hàng trong 15 ngày.",
+    "trace_file": "output\\trace_13.json"
+  },
+  {
+    "question": "Voucher của tôi còn dùng được không?",
+    "expected": {},
+    "actual_status": "ok",
+    "final_answer": "Status: clarification_needed\nQuestion: Vui lòng cung cấp mã voucher của bạn để tôi có thể kiểm tra tình trạng hiệu lực giúp bạn.",
+    "trace_file": "output\\trace_14.json"
+  },
+  {
+    "question": "Đơn hàng của tôi có được hoàn trả không?",
+    "expected": {},
+    "actual_status": "ok",
+    "final_answer": "Status: clarification_needed\nQuestion: Để kiểm tra chính sách hoàn trả cho đơn hàng cụ thể của bạn, vui lòng cung cấp mã đơn hàng (order_id) của bạn.",
+    "trace_file": "output\\trace_15.json"
+  },
+  {
+    "question": "Kiểm tra đơn hàng 9999 giúp tôi",
+    "expected": {},
+    "actual_status": "ok",
+    "final_answer": "Status: not_found\nMessage: Rất tiếc, chúng tôi không tìm thấy thông tin cho đơn hàng có mã 9999 trong hệ thống. Vui lòng kiểm tra lại mã đơn hàng và thử lại nhé!",
+    "trace_file": "output\\trace_16.json"
+  },
+  {
+    "question": "Cho tôi xem voucher của khách hàng C999",
+    "expected": {},
+    "actual_status": "ok",
+    "final_answer": "Status: not_found\nMessage: Rất tiếc, chúng tôi không tìm thấy voucher nào được liên kết với mã khách hàng C999 trong hệ thống. Vui lòng kiểm tra lại mã khách hàng hoặc liên hệ với bộ phận hỗ trợ nếu bạn cần thêm sự trợ giúp.",
+    "trace_file": "output\\trace_17.json"
+  },
+  {
+    "question": "Customer C014 có những đơn nào gần đây?",
+    "expected": {},
+    "actual_status": "ok",
+    "final_answer": "Answer: Chào bạn, khách hàng Võ Thanh Quân (mã C014) hiện có 7 đơn hàng gần đây với các trạng thái như sau:\n\n- Đơn 2058 (29/05/2026): Đã giao thành công (Tai nghe Bluetooth, Sạc nhanh).\n- Đơn 2230 (09/05/2026): Đang chờ bàn giao vận chuyển (Giày sneaker).\n- Đơn 2218 (30/04/2026): Đang chờ bàn giao vận chuyển (Bộ hộp đựng thực phẩm).\n- Đơn 2212 (20/03/2026): Đang trên đường giao (Serum, Mã quà tặng).\n- Đơn 1914 (26/02/2026): Đã hoàn tất.\n- Đơn 2141 (21/02/2026): Đã giao thành công.\n- Đơn 2132 (08/02/2026): Đang trên đường giao.\n\nHy vọng thông tin này hữu ích với bạn!\n\nEvidence:\n- Policy: None\n- Order data: Khách hàng C014 có 7 đơn hàng với các trạng thái: 2 đơn đã giao thành công, 1 đơn đã hoàn tất, 2 đơn đang chờ bàn giao vận chuyển và 2 đơn đang trên đường giao.",
+    "trace_file": "output\\trace_18.json"
+  },
+  {
+    "question": "Phương thức giao nhanh có thể bị chuyển sang giao tiêu chuẩn khi nào?",
+    "expected": {},
+    "actual_status": "ok",
+    "final_answer": "Answer: Đơn hàng của bạn sử dụng phương thức giao nhanh có thể bị chuyển sang hình thức giao hàng tiêu chuẩn trong các trường hợp sau:\n- Người bán (shop) bàn giao hàng cho đơn vị vận chuyển chậm hơn thời gian quy định.\n- Sản phẩm có kích thước hoặc khối lượng vượt quá ngưỡng cho phép của dịch vụ giao nhanh.\n- Phát sinh các rủi ro vận hành khách quan từ phía đơn vị vận chuyển.\n\nEvidence:\n- Policy: Chính sách giao hàng (mục 4.4. Giao hàng nhanh và giao ưu tiên) quy định các trường hợp chuyển đổi phương thức giao hàng do lỗi từ phía người bán, đặc thù sản phẩm hoặc rủi ro vận hành.\n- Order data: None",
+    "trace_file": "output\\trace_19.json"
+  },
+  {
+    "question": "Khách hàng C001 tối đa dùng bao nhiêu voucher mỗi tháng?",
+    "expected": {},
+    "actual_status": "ok",
+    "final_answer": "Answer: Chào bạn, dựa trên chính sách hiện hành, số lượng voucher tối đa mà khách hàng được sử dụng mỗi tháng sẽ phụ thuộc vào hạng thành viên của khách hàng đó. Cụ thể: hạng Standard là 6 voucher, Silver là 8, Gold là 10, Platinum là 12 và VIP là 15 voucher mỗi tháng.\n\nĐối với trường hợp của khách hàng C001, dữ liệu hệ thống hiện tại không ghi nhận một hạn mức cố định cụ thể nào cho tài khoản này. Việc sử dụng voucher của khách hàng C001 sẽ tuân theo các điều kiện áp dụng riêng biệt của từng chương trình khuyến mãi và thời hạn sử dụng của voucher đó.\n\nEvidence:\n- Policy: Chính sách 6.4 quy định hạn mức voucher theo hạng thành viên (từ 6 đến 15 voucher/tháng).\n- Order data: Dữ liệu khách hàng C001 không ghi nhận giới hạn số lượng voucher hàng tháng; việc sử dụng voucher phụ thuộc vào điều kiện của từng chương trình khuyến mãi.",
+    "trace_file": "output\\trace_20.json"
+  },
+  {
+    "question": "Đơn hàng 2058 có liên quan gì đến cửa sổ trả hàng 15 ngày trong policy không?",
+    "expected": {},
+    "actual_status": "ok",
+    "final_answer": "Answer: Đơn hàng 2058 của bạn hoàn toàn đủ điều kiện để thực hiện trả hàng theo chính sách 15 ngày của cửa hàng. Đơn hàng này đã được giao thành công vào ngày 01/06/2026, vì vậy bạn có quyền gửi yêu cầu trả hàng hoặc hoàn tiền cho đến hết ngày 16/06/2026. Tất cả các sản phẩm trong đơn hàng (Tai nghe Bluetooth AirBeat S5 và Sạc nhanh 65W NovaCharge) đều nằm trong phạm vi được hỗ trợ đổi trả.\n\nEvidence:\n- Policy: Theo chính sách, thời hạn trả hàng mặc định là 15 ngày kể từ khi đơn hàng được giao thành công. Quyền trả hàng được áp dụng cho các đơn hàng đã ở trạng thái \"delivered\" và chưa vượt quá thời hạn cho phép.\n- Order data: Đơn hàng 2058 giao thành công ngày 01/06/2026, hạn cuối trả hàng là 16/06/2026.",
+    "trace_file": "output\\trace_21.json"
+  }
+]

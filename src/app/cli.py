@@ -18,12 +18,20 @@ def main() -> None:
     args = build_parser().parse_args()
     assistant = ShoppingAssistant()
 
-    # TODO:
-    # - nếu `--batch` thì đọc `data/test.json` và chạy batch
-    # - nếu có `--question` thì chạy một câu
-    # - lưu trace nếu user truyền `--trace-file`
-    # - in final answer hoặc summary ra terminal
-    raise NotImplementedError("Student TODO: finish the CLI entry point")
+    if args.batch:
+        from pathlib import Path
+        test_file = Path(args.test_file)
+        output_dir = Path("output")
+        result = assistant.run_batch(test_file=test_file, output_dir=output_dir)
+        print(f"Batch completed: {result['total']} questions processed. Summary saved to {result['summary_file']}.")
+    elif args.question:
+        from pathlib import Path
+        trace_file = Path(args.trace_file) if args.trace_file else None
+        result = assistant.ask(args.question, trace_file=trace_file)
+        print("\n=== FINAL ANSWER ===\n")
+        print(result.get("final_answer", ""))
+    else:
+        print("Please provide --question or --batch.")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,15 @@
+[
+  {
+    "node": "supervisor",
+    "output": {
+      "status": "clarification_needed",
+      "needs_policy": false,
+      "needs_data": true,
+      "clarification_question": "Vui lòng cung cấp mã voucher của bạn để tôi có thể kiểm tra tình trạng hiệu lực giúp bạn."
+    }
+  },
+  {
+    "node": "worker_3_response",
+    "output": "Status: clarification_needed\nQuestion: Vui lòng cung cấp mã voucher của bạn để tôi có thể kiểm tra tình trạng hiệu lực giúp bạn."
+  }
+]

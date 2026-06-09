@@ -1,0 +1,41 @@
+[
+  {
+    "node": "supervisor",
+    "output": {
+      "status": "ok",
+      "needs_policy": false,
+      "needs_data": true,
+      "clarification_question": null
+    }
+  },
+  {
+    "node": "worker_2_data",
+    "tool_calls": [
+      {
+        "tool": "get_order_detail_by_order_id",
+        "args": {
+          "order_id": "9999"
+        },
+        "result": {
+          "status": "not_found",
+          "order_id": "9999"
+        }
+      }
+    ],
+    "output": {
+      "status": "not_found",
+      "summary": "Rất tiếc, chúng tôi không tìm thấy thông tin cho đơn hàng có mã 9999 trong hệ thống.",
+      "facts": [
+        "Đơn hàng với mã 9999 không tồn tại trong cơ sở dữ liệu."
+      ],
+      "missing_fields": [],
+      "not_found_entities": [
+        "Order 9999"
+      ]
+    }
+  },
+  {
+    "node": "worker_3_response",
+    "output": "Status: not_found\nMessage: Rất tiếc, chúng tôi không tìm thấy thông tin cho đơn hàng có mã 9999 trong hệ thống. Vui lòng kiểm tra lại mã đơn hàng và thử lại nhé!"
+  }
+]

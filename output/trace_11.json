@@ -1,0 +1,132 @@
+[
+  {
+    "node": "supervisor",
+    "output": {
+      "status": "ok",
+      "needs_policy": true,
+      "needs_data": true,
+      "clarification_question": null
+    }
+  },
+  {
+    "node": "worker_1_policy",
+    "hits": [
+      {
+        "citation": "4. Chính sách giao hàng > 4.5. Tách đơn và giao nhiều kiện",
+        "content": "## 4. Chính sách giao hàng\n### 4.5. Tách đơn và giao nhiều kiện\nMột đơn hàng có thể được tách thành nhiều kiện trong các trường hợp:\n\n- đơn có sản phẩm từ nhiều nhà bán khác nhau\n- các mặt hàng nằm ở nhiều kho\n- một phần hàng sẵn kho, phần còn lại cần xử lý riêng\n\nKhi đó:\n\n- mỗi kiện có thể có mã vận đơn riêng\n- thời gian giao của từng kiện có thể khác nhau\n- việc hoàn trả cũng có thể phát sinh theo từng kiện hoặc từng sản phẩm",
+        "distance": 0.4823035001754761
+      },
+      {
+        "citation": "4. Chính sách giao hàng > 4.3. Thời gian giao hàng dự kiến",
+        "content": "## 4. Chính sách giao hàng\n### 4.3. Thời gian giao hàng dự kiến\nThời gian giao hàng dự kiến phụ thuộc vào khu vực nhận hàng:\n\n- nội thành cùng tỉnh/thành phố lớn: 1 đến 2 ngày\n- liên tỉnh khu vực lân cận: 2 đến 4 ngày\n- tuyến huyện, xã hoặc khu vực xa: 3 đến 7 ngày\n- sản phẩm cồng kềnh hoặc hàng cần kiểm tra đặc biệt: cộng thêm 1 đến 3 ngày\n\nĐây là thời gian dự kiến. Hệ thống có thể điều chỉnh `estimated_delivery` nếu phát sinh:\n\n- thời tiết xấu\n- ùn tắc giao thông\n- người nhận không liên lạc được\n- sai hoặc thiếu thông tin địa chỉ\n- hàng phải trung chuyển nhiều chặng",
+        "distance": 0.539053738117218
+      },
+      {
+        "citation": "4. Chính sách giao hàng > 4.1. Phương thức giao hàng",
+        "content": "## 4. Chính sách giao hàng\n### 4.1. Phương thức giao hàng\nVinShop Demo hỗ trợ các hình thức giao hàng sau:\n\n- `standard`: giao hàng tiêu chuẩn toàn quốc\n- `fast`: giao nhanh nội thành hoặc liên tỉnh ngắn\n- `express`: giao ưu tiên cho sản phẩm đủ điều kiện\n- `scheduled`: giao theo khung giờ hẹn trước tại một số khu vực\n\nKhông phải mọi sản phẩm đều hỗ trợ tất cả phương thức giao hàng. Hệ thống sẽ chỉ hiển thị các phương thức phù hợp dựa trên:\n\n- địa chỉ nhận hàng\n- kích thước và khối lượng gói hàng\n- điều kiện đóng gói của nhà bán\n- đặc thù sản phẩm như dễ vỡ, hàng giá trị cao, hàng cồng kềnh hoặc hàng cần bảo quản đặc biệt",
+        "distance": 0.5428346991539001
+      },
+      {
+        "citation": "4. Chính sách giao hàng > 4.7. Giao hàng không thành công",
+        "content": "## 4. Chính sách giao hàng\n### 4.7. Giao hàng không thành công\nĐơn hàng có thể bị cập nhật `delivery_failed` khi:\n\n- người nhận không nghe máy sau nhiều lần liên hệ\n- địa chỉ giao không chính xác\n- người nhận hẹn lại nhiều lần vượt quá ngưỡng hỗ trợ\n- khách từ chối nhận hàng không có lý do phù hợp\n- khu vực giao hàng tạm thời bị hạn chế\n\nTrong trường hợp giao không thành công:\n\n- hệ thống có thể tự động lên lịch giao lại\n- hoặc chuyển hoàn về kho / shop\n- hoặc hủy đơn tùy trạng thái thanh toán và điều kiện vận hành",
+        "distance": 0.5506948232650757
+      }
+    ],
+    "output": {
+      "status": "not_found",
+      "summary": "Rất tiếc, thông tin về đơn hàng cụ thể (như mã đơn 2058) và chính sách đổi trả chi tiết không có trong dữ liệu hiện tại. Các chính sách được cung cấp chỉ bao gồm thông tin về phương thức giao hàng, thời gian giao hàng dự kiến, việc tách đơn và các trường hợp giao hàng không thành công.",
+      "facts": [
+        "Dữ liệu hiện tại không chứa thông tin về trạng thái đơn hàng 2058.",
+        "Dữ liệu hiện tại không chứa chính sách đổi trả hàng cụ thể."
+      ],
+      "citations": []
+    }
+  },
+  {
+    "node": "worker_2_data",
+    "tool_calls": [
+      {
+        "tool": "get_order_detail_by_order_id",
+        "args": {
+          "order_id": "2058"
+        },
+        "result": {
+          "status": "ok",
+          "order": {
+            "order_id": "2058",
+            "customer_id": "C014",
+            "customer_name": "Võ Thanh Quân",
+            "order_status": "delivered",
+            "payment_method": "credit_card",
+            "payment_status": "paid",
+            "shipping_method": "standard",
+            "carrier": "Giao Hang Nhanh",
+            "tracking_number": "VN2058450091",
+            "warehouse_city": "Ha Noi",
+            "destination_city": "Ha Noi",
+            "destination_district": "Dong Da",
+            "created_at": "2026-05-29T09:20",
+            "packed_at": "2026-05-29T14:10",
+            "handed_over_at": "2026-05-30T08:30",
+            "estimated_delivery": "2026-06-02",
+            "delivered_at": "2026-06-01T17:10",
+            "completed_at": null,
+            "eligible_for_return_until": "2026-06-16",
+            "can_return_now": true,
+            "returnable_items_count": 2,
+            "subtotal": 1465000,
+            "shipping_fee": 32000,
+            "discount_amount": 150000,
+            "final_total": 1347000,
+            "voucher_code": "PLATFORM-15-2058",
+            "is_split_order": true,
+            "parcel_count": 2,
+            "current_location": "Delivered",
+            "latest_status_note": "Đơn đã giao thành công và vẫn còn trong thời gian hỗ trợ trả hàng.",
+            "items": [
+              {
+                "product_id": "P205801",
+                "seller_sku": "SKU-2058-01",
+                "product_name": "Tai nghe Bluetooth AirBeat S5",
+                "category": "electronics",
+                "quantity": 1,
+                "unit_price": 760000,
+                "returnable": true,
+                "return_window_days": 15,
+                "fragile": false,
+                "shop_name": "TechHub Official"
+              },
+              {
+                "product_id": "P205802",
+                "seller_sku": "SKU-2058-02",
+                "product_name": "Sạc nhanh 65W NovaCharge",
+                "category": "electronics",
+                "quantity": 1,
+                "unit_price": 705000,
+                "returnable": true,
+                "return_window_days": 15,
+                "fragile": false,
+                "shop_name": "TechHub Official"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "output": {
+      "status": "ok",
+      "summary": "Đơn hàng 2058 của khách hàng Võ Thanh Quân hiện vẫn còn trong thời gian hỗ trợ trả hàng.",
+      "facts": [
+        "Đơn hàng 2058 đã được giao thành công vào ngày 01/06/2026.",
+        "Thời hạn trả hàng cho đơn hàng này là đến hết ngày 16/06/2026.",
+        "Đơn hàng bao gồm 2 sản phẩm (Tai nghe Bluetooth AirBeat S5 và Sạc nhanh 65W NovaCharge) đều đủ điều kiện để trả hàng."
+      ],
+      "missing_fields": [],
+      "not_found_entities": []
+    }
+  },
+  {
+    "node": "worker_3_response",
+    "output": "Status: not_found\nMessage: Rất tiếc, hiện tại hệ thống không có thông tin chi tiết về chính sách đổi trả cụ thể để xác nhận các điều kiện áp dụng. Tuy nhiên, dựa trên dữ liệu đơn hàng, đơn hàng 2058 của bạn đã được giao thành công vào ngày 01/06/2026 và vẫn còn trong thời hạn hỗ trợ trả hàng đến hết ngày 16/06/2026. Bạn vui lòng liên hệ bộ phận chăm sóc khách hàng để được hướng dẫn chi tiết về quy trình đổi trả nhé."
+  }
+]

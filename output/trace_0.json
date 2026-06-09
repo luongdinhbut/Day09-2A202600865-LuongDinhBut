@@ -1,0 +1,55 @@
+[
+  {
+    "node": "supervisor",
+    "output": {
+      "status": "ok",
+      "needs_policy": true,
+      "needs_data": false,
+      "clarification_question": null
+    }
+  },
+  {
+    "node": "worker_1_policy",
+    "hits": [
+      {
+        "citation": "5. Chính sách đổi trả và hoàn tiền > 5.9. Hoàn tiền",
+        "content": "## 5. Chính sách đổi trả và hoàn tiền\n### 5.9. Hoàn tiền\nTiền hoàn có thể được trả về:\n\n- ví nội bộ của nền tảng\n- tài khoản ngân hàng\n- thẻ thanh toán\n- phương thức thanh toán gốc nếu hạ tầng thanh toán hỗ trợ\n\nThời gian nhận tiền thực tế có thể phụ thuộc:\n\n- cổng thanh toán\n- ngân hàng phát hành\n- trạng thái đối soát\n- việc xác minh chứng từ của bộ phận vận hành",
+        "distance": 0.6502237915992737
+      },
+      {
+        "citation": "3. Thuật ngữ > 3.3. Yêu cầu trả hàng / hoàn tiền",
+        "content": "## 3. Thuật ngữ\n### 3.3. Yêu cầu trả hàng / hoàn tiền\nLà yêu cầu do khách hàng khởi tạo sau khi đơn hàng đã phát sinh vấn đề như:\n\n- giao sai sản phẩm\n- thiếu hàng\n- hàng lỗi, vỡ, hư hỏng\n- hàng không đúng mô tả\n- nghi ngờ hàng giả hoặc sai thương hiệu\n- đơn đã giao nhưng khách có nhu cầu đổi ý trong phạm vi cho phép",
+        "distance": 0.6720553636550903
+      },
+      {
+        "citation": "4. Chính sách giao hàng > 4.6. Kiểm hàng khi nhận",
+        "content": "## 4. Chính sách giao hàng\n### 4.6. Kiểm hàng khi nhận\nKhách hàng được khuyến nghị:\n\n- kiểm tra tình trạng thùng hàng khi nhận\n- quay video mở kiện đối với sản phẩm giá trị cao\n- báo ngay trên ứng dụng nếu phát hiện vỡ, móp, thiếu phụ kiện hoặc sai sản phẩm\n\nTrong phạm vi nghiệp vụ mô phỏng cho lab:\n\n- khách được phép kiểm tra ngoại quan gói hàng trước khi xác nhận nhận\n- việc dùng thử sâu, lắp đặt, kích hoạt hoặc sử dụng lâu dài không thuộc phạm vi \"kiểm hàng tại chỗ\"",
+        "distance": 0.6776489019393921
+      },
+      {
+        "citation": "4. Chính sách giao hàng > 4.5. Tách đơn và giao nhiều kiện",
+        "content": "## 4. Chính sách giao hàng\n### 4.5. Tách đơn và giao nhiều kiện\nMột đơn hàng có thể được tách thành nhiều kiện trong các trường hợp:\n\n- đơn có sản phẩm từ nhiều nhà bán khác nhau\n- các mặt hàng nằm ở nhiều kho\n- một phần hàng sẵn kho, phần còn lại cần xử lý riêng\n\nKhi đó:\n\n- mỗi kiện có thể có mã vận đơn riêng\n- thời gian giao của từng kiện có thể khác nhau\n- việc hoàn trả cũng có thể phát sinh theo từng kiện hoặc từng sản phẩm",
+        "distance": 0.7254399061203003
+      }
+    ],
+    "output": {
+      "status": "ok",
+      "summary": "Khách hàng có thể yêu cầu trả hàng hoặc hoàn tiền khi đơn hàng gặp các vấn đề như: giao sai sản phẩm, thiếu hàng, hàng bị lỗi/vỡ/hư hỏng, hàng không đúng mô tả, nghi ngờ hàng giả hoặc khách hàng đổi ý trong phạm vi cho phép. Việc hoàn trả có thể được thực hiện theo từng kiện hoặc từng sản phẩm tùy vào đơn hàng. Sau khi hoàn trả, tiền sẽ được hoàn về ví nội bộ, tài khoản ngân hàng, thẻ thanh toán hoặc phương thức thanh toán gốc (nếu được hỗ trợ). Thời gian nhận tiền thực tế phụ thuộc vào cổng thanh toán, ngân hàng và quy trình đối soát/xác minh của bộ phận vận hành.",
+      "facts": [
+        "Khách hàng có thể yêu cầu trả hàng/hoàn tiền khi gặp sự cố về sản phẩm hoặc đổi ý trong phạm vi cho phép.",
+        "Việc hoàn trả có thể phát sinh theo từng kiện hoặc từng sản phẩm.",
+        "Tiền hoàn có thể được trả về ví nội bộ, tài khoản ngân hàng, thẻ thanh toán hoặc phương thức thanh toán gốc.",
+        "Thời gian nhận tiền phụ thuộc vào ngân hàng, cổng thanh toán và quy trình xác minh của bộ phận vận hành."
+      ],
+      "citations": [
+        "3. Thuật ngữ > 3.3. Yêu cầu trả hàng / hoàn tiền",
+        "4. Chính sách giao hàng > 4.5. Tách đơn và giao nhiều kiện",
+        "5. Chính sách đổi trả và hoàn tiền > 5.9. Hoàn tiền"
+      ]
+    }
+  },
+  {
+    "node": "worker_3_response",
+    "output": "Answer: Chào bạn, về chính sách hoàn trả hàng và hoàn tiền, chúng tôi xin thông tin đến bạn như sau:\n\nBạn có thể yêu cầu trả hàng hoặc hoàn tiền trong các trường hợp đơn hàng gặp sự cố như: giao sai sản phẩm, thiếu hàng, hàng bị lỗi/vỡ/hư hỏng, hàng không đúng mô tả, nghi ngờ hàng giả hoặc khi bạn đổi ý trong phạm vi cho phép. Việc hoàn trả có thể được thực hiện cho từng kiện hàng hoặc từng sản phẩm riêng lẻ tùy vào đơn hàng của bạn.\n\nSau khi yêu cầu được chấp thuận, tiền sẽ được hoàn về ví nội bộ, tài khoản ngân hàng, thẻ thanh toán hoặc phương thức thanh toán gốc (nếu được hỗ trợ). Thời gian bạn nhận được tiền thực tế sẽ phụ thuộc vào quy trình của ngân hàng, cổng thanh toán và quy trình xác minh từ bộ phận vận hành của chúng tôi.\n\nEvidence:\n- Policy: Chính sách dựa trên các quy định về yêu cầu trả hàng/hoàn tiền, chính sách giao hàng và quy trình hoàn tiền (Mục 3.3, 4.5, 5.9).\n- Order data: None"
+  }
+]
